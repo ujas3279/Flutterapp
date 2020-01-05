@@ -49,8 +49,6 @@ class _Practical5State extends State<Practical5> {
   }
   void checklogin(){
     setState(() {
-      
-    
   if(user=='ujas3279')
   {
       if(password=='1234'){
@@ -61,19 +59,14 @@ class _Practical5State extends State<Practical5> {
       {
         bgcolor=Colors.red;
         loginmessage='Login unsuccessful!!!!!!';
-      }
-         
+      }      
   }
   else
-      {
-         
+      {   
           bgcolor=Colors.red;
           loginmessage='Login Unsuccessful!!!!!!';
-      
-      
       }
 }
-
 );
 }
 }
