@@ -26,9 +26,14 @@ class Practical3 extends StatelessWidget {
     );
   }
   void showtoast(){
-    Timer.periodic(Duration(seconds: 10), (timer)  {
+    a=0;
+    Timer.periodic(Duration(seconds: 5), (timer)  {
+                    if(a==1)
+                      {
+                        timer.cancel();
+                      }
        Fluttertoast.showToast(
-                        msg: 'hello this is toast message',
+                        msg: 'Hello How Are You?',
                         toastLength: Toast.LENGTH_SHORT,
                         gravity: ToastGravity.CENTER,
                         timeInSecForIos: 3,
@@ -36,10 +41,7 @@ class Practical3 extends StatelessWidget {
                         textColor: Colors.white,
                         fontSize: 16.0
                       );
-                      if(a==1)
-                      {
-                        timer.cancel();
-                      }
+                      
 });
   }
 }
