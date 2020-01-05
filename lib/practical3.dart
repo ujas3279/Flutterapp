@@ -4,6 +4,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'dart:async';
 class Practical3 extends StatelessWidget {
   @override
+  int a=0;
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:AppBar( title:Text('Practical3'),),
@@ -13,6 +14,12 @@ class Practical3 extends StatelessWidget {
           RaisedButton(
             child:Text('toast') ,
             onPressed: showtoast,
+            ),
+             RaisedButton(
+            child:Text('Stoptoast') ,
+            onPressed:(){
+              a=1;
+            },
             )
         ],
       ),)
@@ -29,6 +36,10 @@ class Practical3 extends StatelessWidget {
                         textColor: Colors.white,
                         fontSize: 16.0
                       );
+                      if(a==1)
+                      {
+                        timer.cancel();
+                      }
 });
   }
 }
