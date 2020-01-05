@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:demo/drawer.dart';
+import 'dart:io';
 String user='0';
 String password='0';
 Color bgcolor=Colors.white;
 String loginmessage=' ';
+int attempt=3;
+bool _isButtonDisabeled=false;
 class Practical5 extends StatefulWidget {
   @override
   _Practical5State createState() => _Practical5State();
@@ -38,10 +41,19 @@ class _Practical5State extends State<Practical5> {
                },
            ),
            RaisedButton(child: Text('Log In'),
-           onPressed: checklogin,),
+           
+           onPressed: _isButtonDisabeled ? null :checklogin,),
            Text(loginmessage,style:TextStyle(
              backgroundColor: bgcolor,
-           ) ,)
+           ) ,
+           ),
+           Text('Attemps remainin :'+attempt.toString()),
+           FloatingActionButton(
+             tooltip: 'Close App',
+             child: new Icon(Icons.close),
+             onPressed: ()=>exit(0),
+           ) 
+           
       ],
       ),
       ),
@@ -49,24 +61,34 @@ class _Practical5State extends State<Practical5> {
   }
   void checklogin(){
     setState(() {
+  
+  
   if(user=='ujas3279')
   {
       if(password=='1234'){
           bgcolor=Colors.green;
           loginmessage='Login successful!!!!!!';
+          attempt=3;
       }
       else
       {
         bgcolor=Colors.red;
         loginmessage='Login unsuccessful!!!!!!';
+        attempt--;
       }      
   }
   else
       {   
           bgcolor=Colors.red;
           loginmessage='Login Unsuccessful!!!!!!';
+          attempt--;
       }
-}
+      if(attempt==0)
+  {
+    _isButtonDisabeled=true;
+  }
+}    
 );
 }
+
 }
