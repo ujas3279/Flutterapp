@@ -11,6 +11,7 @@ class _Practical1state extends State<Practical1>{
     
     
     return new Scaffold(
+    backgroundColor: Colors.yellow,
     appBar: new AppBar(title: Text('Practical 1'),),
     drawer: DrawerOnly(),
     body:Center(child: Text('hello how are you?'),) ,    

@@ -52,8 +52,7 @@ class _Practical5State extends State<Practical5> {
              tooltip: 'Close App',
              child: new Icon(Icons.close),
              onPressed: ()=>exit(0),
-           ) 
-           
+           )  
       ],
       ),
       ),
@@ -90,5 +89,4 @@ class _Practical5State extends State<Practical5> {
 }    
 );
 }
-
 }
