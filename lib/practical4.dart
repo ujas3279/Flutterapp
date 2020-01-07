@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:demo/practical1.dart';
 import 'package:demo/drawer.dart';
-import 'package:demo/practical2.dart';
 class Practical4 extends StatefulWidget{ 
 _Practical4State createState()=>_Practical4State();
 }

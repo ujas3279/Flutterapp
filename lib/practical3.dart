@@ -3,8 +3,8 @@ import 'package:demo/drawer.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'dart:async';
 class Practical3 extends StatelessWidget {
-  @override
   int a=0;
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:AppBar( title:Text('Practical3'),),
