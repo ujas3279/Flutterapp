@@ -27,7 +27,7 @@ class _Practical4State extends State<Practical4>{
   Widget build(BuildContext context) {
     return new Scaffold(
       
-      appBar: new AppBar(title: Text('Practical 2'),),
+      appBar: new AppBar(title: Text('Practical 4'),),
       drawer: new DrawerOnly(),
       body:Center(
         child:ListView(
