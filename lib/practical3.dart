@@ -2,8 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:demo/drawer.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'dart:async';
-class Practical3 extends StatelessWidget {
+class Practical3 extends StatefulWidget {
+  @override
+  _Practical3State createState() => _Practical3State();
+}
+
+class _Practical3State extends State<Practical3> {
   int a=0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,6 +31,7 @@ class Practical3 extends StatelessWidget {
       ),)
     );
   }
+
   void showtoast(){
     a=0;
     Timer.periodic(Duration(seconds: 5), (timer)  {
