@@ -5,11 +5,10 @@ import 'package:demo/practical3.dart';
 import 'package:demo/practical4.dart';
 import 'package:demo/practical5.dart';
 import 'package:demo/practical6.dart';
+import 'package:demo/practical7.dart';
 class DrawerOnly extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-   
-    
      return new Drawer(
                      child: ListView(
                        padding: EdgeInsets.zero ,
@@ -53,13 +52,15 @@ class DrawerOnly extends StatelessWidget{
                            Navigator.pop(context);
                            Navigator.push(context,new MaterialPageRoute(builder: (context)=>new Practical6()));
                          },
+                         ),
+                         ListTile(title: Text('practical 7'),
+                         onTap: (){
+                           Navigator.pop(context);
+                           Navigator.push(context,new MaterialPageRoute(builder: (context)=>new Practical7()));
+                         },
                          )
                          ],
-                         ),
-
-                           
-                         
-                       
+                         ), 
                        );
                    
 
