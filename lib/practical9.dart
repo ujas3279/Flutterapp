@@ -16,7 +16,7 @@ class _Practical9State extends State<Practical9> {
         title: Text("Browser"),
       ),
       
-      url: "https://www.google.com/"
+      url: "https://www.bookmyshow.com"
       
     );
   }
