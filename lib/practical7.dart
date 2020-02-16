@@ -12,8 +12,8 @@ class Practical7 extends StatefulWidget {
 class _Practical7State extends State<Practical7> {
 
   var _abc = ['red','yellow','blue'];
-  var _current = 'white';
-  Color bgcolor = Colors.white;
+  var _current = 'red';
+  Color bgcolor = Colors.red;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
