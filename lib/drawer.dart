@@ -8,6 +8,7 @@ import 'package:demo/practical6.dart';
 import 'package:demo/practical7.dart';
 import 'package:demo/practical8.dart';
 import 'package:demo/practical9.dart';
+import 'package:demo/practical10.dart';
 class DrawerOnly extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -71,6 +72,12 @@ class DrawerOnly extends StatelessWidget{
                          onTap: (){
                            Navigator.pop(context);
                            Navigator.push(context,new MaterialPageRoute(builder: (context)=>new Practical9()));
+                         },
+                         ),
+                          ListTile(title: Text('practical 10'),
+                         onTap: (){
+                           Navigator.pop(context);
+                           Navigator.push(context,new MaterialPageRoute(builder: (context)=>new Practical10()));
                          },
                          )
                          ],
