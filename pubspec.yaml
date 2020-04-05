@@ -33,7 +33,9 @@ dependencies:
   firebase_core: ^0.4.0+8
   provider: ^3.0.0+1
   get_it: ^1.0.3+2
-  
+  tflite: ^1.0.4
+  image: ^2.1.4
+  fl_chart: ^0.5.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -55,7 +57,9 @@ flutter:
    - assets/images/1.jpg
    - assets/images/2.jpg
    - assets/images/3.jpg
-   - assets/images/4.jpg    
+   - assets/images/4.jpg 
+   - assets/converted_mnist_model.tflite
+   - assets/labels.txt   
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
