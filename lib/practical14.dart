@@ -1,4 +1,3 @@
-import 'package:demo/drawer.dart';
 import 'package:demo/recognizer_screen.dart';
 import 'package:flutter/material.dart';
 class Practical14 extends StatefulWidget {

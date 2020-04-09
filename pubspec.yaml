@@ -36,6 +36,8 @@ dependencies:
   tflite: ^1.0.4
   image: ^2.1.4
   fl_chart: ^0.5.1
+  google_sign_in:
+  speech_to_text:
 dev_dependencies:
   flutter_test:
     sdk: flutter

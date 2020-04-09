@@ -1,3 +1,7 @@
+import 'package:demo/practical10.dart';
+import 'package:demo/practical11.dart';
+import 'package:demo/practical12.dart';
+
 import 'package:flutter/material.dart';
 import 'package:demo/practical1.dart';
 import 'package:demo/practical2.dart';
@@ -74,8 +78,26 @@ class DrawerOnly extends StatelessWidget{
                            Navigator.push(context,new MaterialPageRoute(builder: (context)=>new Practical9()));
                          },
                          ),
-                          ListTile(title: Text('practical 14'),
+                         ListTile(title: Text('practical 10'),
                          onTap: (){
+                           Navigator.pop(context);
+                           Navigator.push(context,new MaterialPageRoute(builder: (context)=>new Practical10()));
+                         },
+                         ),
+                         ListTile(title: Text('practical 11'),
+                         onTap: (){
+                           Navigator.pop(context);
+                           Navigator.push(context,new MaterialPageRoute(builder: (context)=>new Practical11()));
+                         },
+                         ),
+                          ListTile(title: Text('practical 12'),
+                         onTap: (){
+                           Navigator.pop(context);
+                           Navigator.push(context,new MaterialPageRoute(builder: (context)=>new Practical12()));
+                         },
+                         ),
+                          ListTile(title: Text('practical 14'),
+                          onTap: (){
                            Navigator.pop(context);
                            Navigator.push(context,new MaterialPageRoute(builder: (context)=>new Practical14()));
                          },
